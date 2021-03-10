@@ -22,10 +22,10 @@ $mobile : "all and (max-width : 720px)";
     position: relative;
 
     @media #{$tablet} {
-
+        padding: 40px 40px 0;
     }
 
     @media #{$mobile} {
-
+        padding: 40px 20px 0;
     }
 }

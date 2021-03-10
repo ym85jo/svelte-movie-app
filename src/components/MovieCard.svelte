@@ -4,14 +4,14 @@
     
     let imageLoading = true;
 
-    export let movie;
+    export let movie
 
     if (movie.Poster === 'N/A') {
         imageLoading = false;
     } else {
         const img = document.createElement('img')
-        img.src = movie.poster
-        img.addEventListener( 'load', () => {
+        img.src = movie.Poster
+        img.addEventListener('load', () => {
             imageLoading = false
         })
     }
@@ -54,13 +54,9 @@
 </a>
 
 
-
-
-
 <style lang="scss">
 
     .movie{
-        display: block;
         width : 200px;
         height: 300px;
         margin : 10px;
@@ -97,7 +93,7 @@
         }
         .info {
             width : 100%;
-            height: 100%;
+            height: 66px;
             padding : 14px;
             box-sizing: border-box;
             overflow: hidden;
@@ -108,6 +104,17 @@
                 position : absolute;
                 bottom:0;
                 left : 0;
+                transform: scale(2);
+                filter: blur(5px);
+                &::after {
+                    content: "";
+                    background-color: $color--black-50;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 200%;
+                    height: 200%;
+                    }
             }
             .year {
                 position: relative;
