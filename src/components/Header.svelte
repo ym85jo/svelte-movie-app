@@ -70,12 +70,12 @@
             ul {
                 display: flex;
                 li {
-                    margin-left: 10px;
+                    margin-left: 16px;
                     &:first-child {
                         margin-left: 0;
                     }
                     a {
-                        font-size: 14px;
+                        font-size: 20px;
                         font-weight: 700;
                         color: $color--white-50;
                         text-decoration: none;

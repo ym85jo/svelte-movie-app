@@ -1,9 +1,9 @@
 <footer>
     <div>
-        <a href="/">GitHub Repo.</a>
+        <a href="https://github.com/ym85jo/svelte-movie-app" target="_black">GitHub Repo.</a>
     </div>
     <div>
-        <a href="/">
+        <a href="https://joym-svelte.netlify.app/" target="_black">
             @{new Date().getFullYear()}
             Jo Yeong Min
         </a>

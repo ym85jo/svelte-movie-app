@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {writable, get} from 'svelte/store'
 import _unionBy from 'lodash/unionBy'
+import {OMDB_API_KEY} = process.eenv
 
 export const movies = writable([]);
 export const loading = writable(false);
@@ -67,7 +68,6 @@ export async function searchMovieWithId(id){
 
 function _fetchMovie(payload){
     
-    const OMDB_API_KEY = "879c746e";
     const {title, type, year, page, id} = payload
 
     const url = id 
